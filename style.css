@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Raleway&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: nord;
+  src: url('assets/Norse-Bold.otf')
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Raleway;
+  font-size:20px; 
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  overflow-y: hidden;
+}
+
+.landscape {
+  background-image: url('assets/landscape.jpg');
+  background-size: cover;
+  background-position: center;
+  min-width: 41vw;
+  width: 41vw;
+  height: 100vh;
+}
+
+.landscape > p, a{
+  font-size: 0.85rem;
+  color: white;
+}
+
+.landscape > p {
+  position: relative;
+  top: 53%;
+  left: 25%;
+}
+
+.odin-container {
+  position: relative;
+  width: 100%;
+  height: 20%;
+  background-color: #575741;
+  opacity: 0.3; 
+  top: 50px;
+}
+
+.odin-logo {
+  position: relative;
+  width: 100px;
+  height: 120px;
+  top: -70px;
+  left: 133px;
+}
+
+.odin {
+  position: absolute;
+  top: 75px;
+  left: 230px;
+  color: white;
+  font-family: nord;
+  font-size: 90px;
+}
+
+.form-container {
+  background-color: #ebf7de;
+}
+
+.form-container > div {
+  padding-left: 30px;
+  padding-right: 5px;
+} 
+
+.message {
+  height: 40%;
+  padding-top: 90px;
+  text-align: left;
+  font-size:20px;
+  background-color: #e2f3d0;
+  color: #433f32;
+}
+
+.form {
+  font-size:20px;
+  height: 40%;
+  padding-left: 30px;
+  padding-top: 10px; 
+  background-color: #f5f8f2;
+  color: #433f32;
+}
+
+.form > p {
+  margin-top: 3px;
+}
+
+.inputs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin-top: 5px;
+}
+
+.input {
+  width: 50%;
+  height: 50px;
+  margin-top: 10px;
+  font-size: 0.8rem;
+}
+
+.input input {
+  height: 25px;
+  width: 140%;
+}
+
+.input:hover {
+  box-shadow:0rem;
+}
+
+.signup {
+  padding-left: 30px;
+  /* background-color: #ebf7de; */
+  height: 35%;
+}
+
+.signup > button {
+  color: white;
+  background-color: #37574a;
+  border: none;
+  border-radius: 6px;
+  position: relative;
+  top: 20px;
+  width: 160px;
+  height: 35px;
+}
+
+.signup > button:hover {
+  cursor: pointer;
+  background-color: #5a8070;
+}
+
+.signup > p {
+  font-size: 0.98rem;
+  position: relative;
+  top: 20px;
+}
+
+.signup > p > a {
+  font-size: 0.97rem;
+  font-weight: bolder;
+  text-decoration: none;
+  color: green;
+}
